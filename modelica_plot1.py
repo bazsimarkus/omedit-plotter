@@ -1,6 +1,11 @@
 import matplotlib.pyplot as plt
 from csv import reader
 
+# EDIT THESE NUMBERS BASED ON WHICH COLUMN YOU WOULD LIKE TO PLOT
+COLUMN_TO_PLOT_1 = 2
+COLUMN_TO_PLOT_2 = 7
+COLUMN_TO_PLOT_3 = 10
+
 with open('motorgenerator_res.csv', 'r') as read_obj:
     # pass the file object to reader() to get the reader object
     csv_reader = reader(read_obj)
@@ -10,10 +15,6 @@ with open('motorgenerator_res.csv', 'r') as read_obj:
 values1 = []
 values2 = []
 values3 = []
-
-COLUMN_TO_PLOT_1 = 2
-COLUMN_TO_PLOT_2 = 7
-COLUMN_TO_PLOT_3 = 10
 
 counter = 0
 
